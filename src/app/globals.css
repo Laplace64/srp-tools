@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #182255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #181818;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 25px;
+}
+
+/* .border {
+  background: #201F1F;
+} */
+
+
+.text-container {
+  background: #201F1F;
+  resize: none;
+  box-sizing: border-box;
+  border: 0.5em solid #201F1F;
+  border-radius: 0.5em;
+}
+
+.text-container:focus {
+  outline: none !important;
+  border: 0.5em solid #201F1F;
+  box-shadow: 0 0 3px #0072E5;
+}
+
+
+.noround {
+  border-radius: 8px 8px 0 0;
+  width: 200px;
+}
+
+/* .svg-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+} */
+
+.content {
+  margin-top: 100px; /* Adjust as needed to avoid overlap with the SVG */
+}
+
+.gradient {
+  background: linear-gradient(to left, #b08fbe, #f876ac);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
